@@ -1,0 +1,73 @@
+/* Global styles */
+* {
+    margin: 2px;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+/* Headings */
+h2 {
+    margin-bottom: 10px;
+    color: #8B0000;
+    font-size: 3em;
+}
+
+h3 {
+    color: #00008B;
+    font-size: 2em;
+}
+
+/* Horizontal rule */
+hr {
+    height: 5px;
+    background-color: #8B0000;
+    border: none;
+}
+
+/* Paragraphs */
+p {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    font-size: 1.5em;
+    text-align: center;
+    color: #06402B;
+}
+
+/* Div elements */
+div {
+    padding: 15px;
+    border: 1px solid #bdc3c7;
+    background-color: #ecf0f1;
+}
+
+/* Span elements */
+span {
+    color: #e67e22;
+    font-weight: bold;
+}
+
+/* Images */
+img {
+    width: 100%;
+    max-width: 1500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #ea0e4c;
+}
+
+a:hover {
+    color: #6200ee;
+    text-decoration: underline;
+}
+
+/* Highlighted text */
+.highlight {
+    background-color: yellow;
+    padding: 3px;
+    font-weight: bold;
+}

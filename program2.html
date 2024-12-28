@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        th, td {
+            border: 2px solid #000;
+            padding: 10px;
+            font-size: 19px;
+        }
+        thead {
+            background-color: #e0e0e0;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #F7D8BA; /* Alternating row color */
+        }
+        .lab-hour {
+            background-color: #FDDFDF; /* Highlight lab hours */
+            font-weight: bold;
+        }
+        .elective-hour {
+            background-color: #DEFDF0; /* Highlight elective hours */
+        }
+        .highlight {
+            font-weight: bold;
+            color: #d63384; /* Highlight text */
+        }
+        tfoot {
+            background-color: #e0e0e0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Class Time Table</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Day/Time</th>
+                <th>9:00 to 10:00</th>
+                <th>10:00 to 11:00</th>
+                <th>11:00 to 11:15</th>
+                <th>11:15 to 12:15</th>
+                <th>12:15 to 1:15</th>
+                <th>1:15 to 2:00</th>
+                <th>2:00 to 3:00</th>
+                <th>3:00 to 4:00</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>MONDAY</td>
+                <td>Computer Networks</td>
+                <td class="elective-hour">Artificial Intelligence</td>
+                <td rowspan="5" class="highlight">Break</td>
+                <td colspan="2" class="lab-hour">Computer Networks Lab</td>
+                <td rowspan="5" class="highlight">Lunch Break</td>
+                <td>Theory of Computation</td>
+                <td>Environmental Studies</td>
+            </tr>
+            <tr>
+                <td>TUESDAY</td>
+                <td>Environmental Studies</td>
+                <td>Computer Networks</td>
+                <td>Software Engineering</td>
+                <td>Research Methodology</td>
+                <td colspan="2" class="lab-hour">Mini Project</td>
+            </tr>
+            <tr>
+                <td>WEDNESDAY</td>
+                <td>Theory of Computation</td>
+                <td>Research Methodology</td>
+                <td>Software Engineering</td>
+                <td>Research Methodology</td>
+                <td colspan="2" class="lab-hour">Mini Project</td>
+            </tr>
+            <tr>
+                <td>THURSDAY</td>
+                <td colspan="2" class="lab-hour">Computer Networks Lab</td>
+                <td>Theory of Computation</td>
+                <td>Software Engineering</td>
+                <td>Theory of Computation (T)</td>
+                <td class="elective-hour">Artificial Intelligence</td>
+            </tr>
+            <tr>
+                <td>FRIDAY</td>
+                <td>Theory of Computation</td>
+                <td>Computer Networks</td>
+                <td class="elective-hour">Artificial Intelligence</td>
+                <td>Research Methodology (T)</td>
+                <td colspan="2" class="lab-hour">National Service Schema</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="9">End of Time Table</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
